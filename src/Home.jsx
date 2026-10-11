@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import events from "./eventData";
-import "./style.css";
+import "./Style.css";
 
 const raviKiran = "https://files.catbox.moe/j5ksng.jpg";
 const metavid = "https://files.catbox.moe/8n9ubv.jpg";
