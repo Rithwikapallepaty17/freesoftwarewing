@@ -80,7 +80,7 @@ function InstagramIcon() {
 
 //instagram links:
 const instagramByName = {
-    "Bommu Jashwanth Sai Sri Reddy": "https://www.instagram.com/_jashwanth_03",
+    "Bommu Jashwanth Sai Sri Reddy": "https://www.instagram.com/_jashwanth_097",
     "Akinapally Avinash": "https://www.instagram.com/_avinashhhhhh_",
     "Shivani Rao Tula": "https://www.instagram.com/shivani.__.tula",
     "Akhila Kadem": "https://www.instagram.com/akhila_kadem",
@@ -96,12 +96,13 @@ const instagramByName = {
     "Rithvik Kesarla": "https://www.instagram.com/not_rithvik76",
     "G SAHASTRA": "https://www.instagram.com/sahastraa__.__",
     "Vania Battu": "https://www.instagram.com/vania_battu",
-    "ARUR JESHWANTH": "https://www.instagram.com/_jashwanth_097",
+    "ARUR JESHWANTH": "https://www.instagram.com/_jashwanth_03",
     "Siddarth": "https://www.instagram.com/siddu__3",
     "Maniteja Miriyala": "https://www.instagram.com/money.teja._",
     "Suhreeth Bharadwaj": "https://www.instagram.com/suhreeth_",
     "N. Hasini": "https://www.instagram.com/nimmala._.hasini",
     "T. Geethika Shanmukhi": "https://www.instagram.com/geethika.here/",
+    "Akshay Chandra": "https://www.instagram.com/akshaysayzz",
 
 };
 
@@ -117,7 +118,7 @@ const communityData = [
     {
         name: "ADMIN",
         number: "01",
-        tagline: "Planning, decisions, follow-ups. The team that keeps FSW running.",
+        tagline: "We plan the path, make the call, and follow through, so the work never loses its rhythm.",
         members: [
             { name: "Varun Gandhe", year: "3rd Year",image: varun, linkedin: "https://www.linkedin.com/in/varungandhe" },
             { name: "T Harshini", year: "3rd Year", image: harshini, linkedin: "https://www.linkedin.com/in/t-harshini-0b8b79336" },
@@ -128,7 +129,7 @@ const communityData = [
      {
         name: "TECHNICAL",
         number: "02",
-        tagline: "We build the website, fix what breaks, and review each other's code.",
+        tagline: "We build what's seen, mend what breaks, and sharpen each other's craft.",
         members: [
             { name: "Akshay Chandra", year: "3rd Year", image: Akshay, linkedin: "https://www.linkedin.com/in/akshay-chandra2816" ,instagram:"https://www.instagram.com/akshaysayzz/?hl=en"},
             { name: "Rithwika Pallepaty", year: "2nd Year", image: rithwika, linkedin: "https://www.linkedin.com/in/rithwika-pallepaty-7a41403a0", instagram: "https://www.instagram.com/rithwikapallepaty?stkn=dTRhanZqYmVtZmt6"},
@@ -139,7 +140,7 @@ const communityData = [
     {
         name: "PUBLIC RELATIONS",
         number: "03",
-        tagline: "Connecting FSW with colleges, speakers, and communities.",
+        tagline: "We carry FSW's voice to colleges, speakers, and communities, and bring their ideas home.",
 
 
         members: [
@@ -164,7 +165,7 @@ const communityData = [
     {
         name: "DESIGN & SOCIAL MEDIA",
         number: "04",
-        tagline: "Posters, reels, and the look of everything FSW puts out.",
+      tagline: "We shape how FSW looks, from every poster to every reel, so the message is felt before it's read.",
         members: [
             {
                 name: "Akhila Kadem",
@@ -200,7 +201,7 @@ const communityData = [
     {
         name: "ARTS",
         number: "05",
-        tagline: "Sketches, murals, and artwork for every event.",
+        tagline: "We give FSW its hand-drawn soul, from quiet sketches to walls that speak.",
 
         members: [
             {
@@ -230,7 +231,7 @@ const communityData = [
     {
         name: "EVENT MANAGEMENT",
         number: "06",
-        tagline: "From first plan to last cleanup, we run the event.",
+       tagline: "From the first spark of a plan to the last light switched off, we hold the whole evening together.",
 
         members: [
             {
@@ -259,7 +260,7 @@ const communityData = [
     {
         name: "LOGISTICS",
         number: "07",
-        tagline: "Venue, supplies, setup. Everything ready before the event starts.",
+        tagline: "We prepare the stage before the curtain rises: venue, supplies, setup, all in place.",
 
         members: [
             {
@@ -280,7 +281,7 @@ const communityData = [
     {
         name: "PUBLICITY",
         number: "08",
-        tagline: "Getting the word out so people actually show up.",
+        tagline: "We carry the word far and wide, so the room fills with people who came because they heard.",
 
         members: [
             {
@@ -317,7 +318,7 @@ const communityData = [
     {
         name: "DOCUMENTATION",
         number: "09",
-        tagline: "Reports, records, and photos, so the club remembers what it did.",
+        tagline: "We gather the reports, the records, and the photographs, so every moment outlives the day it happened.",
 
         members: [
             {
