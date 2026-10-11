@@ -130,7 +130,7 @@ const communityData = [
         number: "02",
         tagline: "We build the website, fix what breaks, and review each other's code.",
         members: [
-            { name: "Akshay Chandra", year: "3rd Year", image: Akshay, linkedin: "https://www.linkedin.com/in/akshay-chandra2816" },
+            { name: "Akshay Chandra", year: "3rd Year", image: Akshay, linkedin: "https://www.linkedin.com/in/akshay-chandra2816" ,instagram:"https://www.instagram.com/akshaysayzz/?hl=en"},
             { name: "Rithwika Pallepaty", year: "2nd Year", image: rithwika, linkedin: "https://www.linkedin.com/in/rithwika-pallepaty-7a41403a0", instagram: "https://www.instagram.com/rithwikapallepaty?stkn=dTRhanZqYmVtZmt6"},
             { name: "Maniteja Miriyala", year: "2nd Year", image: maniteja, linkedin: "https://www.linkedin.com/in/maniteja-miriyala-1355a1432" },
         ],
@@ -236,6 +236,8 @@ const communityData = [
             {
                 name: "Siddarth",
                 year: "3rd Year",
+                image: siddarth,
+                linkedin:"https://www.linkedin.com/in/siddarth-007",
             },
             {
                 name: "Shivani Rao Tula",
