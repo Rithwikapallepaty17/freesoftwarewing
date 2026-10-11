@@ -1,0 +1,321 @@
+/* =========================================================
+   FSW — CONSTANT FOOTER
+========================================================= */
+
+.site-footer {
+    width: 100%;
+    background: #111111;
+    color: #ffffff;
+
+    border-top: 1px solid #222222;
+
+    margin-top: 120px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN FOOTER
+========================================================= */
+
+.footer-inner {
+    width: 100%;
+    max-width: var(--max-width);
+
+    min-height: 260px;
+
+    margin: 0 auto;
+    padding: 30px 40px;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.footer-logo {
+    display: inline-block;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 34px;
+    font-weight: 800;
+
+    letter-spacing: -0.06em;
+
+    margin-bottom: 12px;
+}
+
+.footer-logo span {
+    color: var(--blue);
+}
+
+.footer-brand p {
+    margin: 0;
+
+    color: #bdbdbd;
+
+    font-size: 13px;
+    letter-spacing: 0.04em;
+}
+
+.footer-brand .footer-description {
+    max-width: 320px;
+
+    margin-top: 20px;
+
+    color: #dddddd;
+
+    line-height: 1.7;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 13px;
+}
+
+.footer-label {
+    margin-bottom: 10px;
+
+    color: #888888;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+}
+
+.footer-column a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.footer-column a:hover {
+    color: var(--blue);
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   BOTTOM BAR
+========================================================= */
+
+.footer-bottom {
+    width: 100%;
+    max-width: var(--max-width);
+
+    min-height: 58px;
+
+    margin: 0 auto;
+    padding: 18px 40px;
+
+    box-sizing: border-box;
+
+    border-top: 1px solid #2a2a2a;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #888888;
+
+    font-size: 10px;
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .footer-inner {
+        min-height: auto;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 50px;
+
+        padding: 55px 40px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .site-footer {
+        margin-top: 80px;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 50px 24px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        min-height: auto;
+
+        padding: 18px 24px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+}
+
+/* =========================================================
+   CONTACT + MAP
+========================================================= */
+
+.footer-map-section {
+    width: min(1300px, 100% - 80px);
+    margin: 0 auto 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+
+    align-items: start;
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.footer-contact-title {
+    margin: 6px 0 10px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.footer-contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer-contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(50, 151, 255, 0.12);
+    color: #3297ff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.footer-contact-row p,
+.footer-contact-row a {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.footer-contact-row a:hover {
+    color: #3297ff;
+}
+
+.footer-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #3297ff;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.footer-map-link:hover {
+    opacity: 0.7;
+}
+
+.footer-map-frame {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.footer-map-frame iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    filter: grayscale(20%) contrast(1.02);
+}
+
+@media (max-width: 900px) {
+    .footer-map-section {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        width: calc(100% - 40px);
+        margin-bottom: 60px;
+    }
+
+    .footer-map-frame {
+        aspect-ratio: 4 / 3;
+    }
+}

@@ -1,0 +1,286 @@
+/* =========================================================
+   FLOATING NAVIGATION
+========================================================= */
+
+.floating-navigation {
+    position: fixed;
+
+    top: 26px;
+    right: 34px;
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+.floating-menu-button {
+    width: 82px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #cfcfcb;
+    border-radius: 999px;
+
+    background: rgba(247, 247, 245, 0.94);
+
+    color: #111;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 0.63rem;
+    font-weight: 600;
+
+    letter-spacing: 0.14em;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.04);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.floating-menu-button:hover {
+    border-color: #3297ff;
+
+    background: #3297ff;
+
+    color: #fff;
+
+    transform: translateY(-1px);
+}
+
+
+.floating-menu-button.menu-active {
+    border-color: #111;
+
+    background: #111;
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   POPUP MENU
+========================================================= */
+
+.menu-popup {
+    width: 300px;
+
+    margin-top: 10px;
+
+    padding: 24px 26px 20px;
+
+    border: 1px solid #d7d7d3;
+    border-radius: 18px;
+
+    background: #f7f7f5;
+
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.08);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-8px) scale(0.97);
+
+    transform-origin: top right;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.22s ease,
+        transform 0.28s ease,
+        visibility 0.28s ease;
+}
+
+
+.menu-popup-open {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0) scale(1);
+
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   EXPLORE LABEL
+========================================================= */
+
+.menu-popup-label {
+    margin-bottom: 16px;
+
+    color: #8b8b87;
+
+    font-size: 0.59rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+}
+
+
+/* =========================================================
+   MENU LINKS
+========================================================= */
+
+.menu-popup-links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu-popup-links a,
+.menu-popup-links button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px 0;
+
+    border: none;
+    border-bottom: 1px solid #dededb;
+
+    background: transparent;
+
+    color: #171717;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 0.95rem;
+    font-weight: 450;
+
+    letter-spacing: -0.01em;
+
+    text-decoration: none;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        padding-left 0.25s ease;
+}
+
+
+.menu-popup-links a:first-child {
+    border-top: 1px solid #dededb;
+}
+
+
+.menu-popup-links a:hover,
+.menu-popup-links button:hover {
+    padding-left: 7px;
+
+    color: #3297ff;
+}
+
+
+.menu-popup-links small {
+    color: #999;
+
+    font-size: 0.57rem;
+
+    font-weight: 500;
+
+    letter-spacing: 0.04em;
+
+    transition: color 0.2s ease;
+}
+
+
+.menu-popup-links a:hover small,
+.menu-popup-links button:hover small {
+    color: #3297ff;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .floating-navigation {
+        top: 18px;
+        right: 16px;
+    }
+
+
+    .floating-menu-button {
+        width: 76px;
+        height: 38px;
+    }
+
+
+    .menu-popup {
+        width: min(290px, calc(100vw - 32px));
+
+        padding: 22px 20px 18px;
+
+        border-radius: 16px;
+    }
+
+
+    .menu-popup-links a,
+    .menu-popup-links button {
+        padding: 12px 0;
+
+        font-size: 0.92rem;
+    }
+
+}
+
+/* ========================================================= 
+   HOVER-TRIGGERED MENU
+========================================================= */
+
+/* Invisible bridge covering the 10px gap between button and popup */
+.floating-navigation::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 0;
+    width: 100px;
+    height: 16px;
+    pointer-events: none;
+}
+
+.floating-navigation:hover::before {
+    pointer-events: auto;
+}
+
+/* 1. Open popup ONLY when hovering the pill or popup itself */
+.floating-navigation:hover .menu-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* 2. Darken pill while the menu is open */
+.floating-navigation:hover .floating-menu-button {
+    border-color: #111;
+    background: #111;
+    color: #fff;
+}

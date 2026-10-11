@@ -1,0 +1,165 @@
+/* =========================================================
+   SITE LOGO — GRIET + FSW (fixed top-left)
+========================================================= */
+
+a.site-logo {
+    position: fixed;
+
+    top: 22px;
+    left: 60px;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+
+    background: transparent;
+    box-shadow: none;
+    text-decoration: none;
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease;
+}
+
+a.site-logo.logo-hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+    pointer-events: none;
+}
+
+a.site-logo.logo-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ---------------------------------------------------------
+   GRIET — logo image + text block
+--------------------------------------------------------- */
+
+.site-logo-griet {
+    height: 38px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.site-logo-griet-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.05;
+    width: 150px;
+}
+
+.site-logo-griet-name {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #101214;          /* dark by default */
+}
+
+.site-logo-griet-full {
+    font-size: 7.5px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-top: 3px;
+    white-space: nowrap;
+    color: #4a4d52;          /* dark by default */
+}
+
+
+/* ---------------------------------------------------------
+   Divider
+--------------------------------------------------------- */
+
+.site-logo-divider {
+    display: block;
+    width: 1px;
+    height: 32px;
+    background: rgba(16, 18, 20, 0.18);   /* dark by default */
+    flex-shrink: 0;
+}
+
+
+/* ---------------------------------------------------------
+   FSW — logo image + text
+--------------------------------------------------------- */
+
+.site-logo-icon {
+    height: 42px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.site-logo-text {
+    font-family: "Inter", sans-serif;
+
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    text-transform: lowercase;
+
+    color: #3297ff;          /* blue — works on both light & dark */
+}
+
+
+/* =========================================================
+   DARK PAGES  (e.g. /projects)
+   When the hero is dark, flip logo text to light
+========================================================= */
+
+.site-logo--on-dark .site-logo-griet-name {
+    color: #ffffff;
+}
+
+.site-logo--on-dark .site-logo-griet-full {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.site-logo--on-dark .site-logo-divider {
+    background: rgba(255, 255, 255, 0.28);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    a.site-logo {
+        top: 16px;
+        left: 16px;
+        gap: 8px;
+    }
+
+    .site-logo-griet-text,
+    .site-logo-divider {
+        display: none;
+    }
+
+    .site-logo-griet {
+        height: 30px;
+    }
+
+    .site-logo-icon {
+        height: 28px;
+    }
+
+    .site-logo-text {
+        font-size: 20px;
+    }
+}
