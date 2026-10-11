@@ -41,7 +41,7 @@ const shalini = "https://files.catbox.moe/ayjdax.jpg";
 // Event Management
 const shivani = "https://files.catbox.moe/w4lgd3.jpg";
 const hasini = "https://files.catbox.moe/hozd9d.jpg";
-const siddarth = "https://files.catbox.moe/h09246.jpg";
+const siddarth = "https://files.catbox.moe/ea0n1a.jpg";
 
 // Logistics
 const jeshwanth = "https://files.catbox.moe/wnxqju.jpg";
@@ -53,7 +53,7 @@ const keerthi = "https://files.catbox.moe/pbvvcq.jpg";
 const geethika = "https://files.catbox.moe/ok0dj8.jpg";
 
 // Documentation
-const vania = "https://files.catbox.moe/pw9wa5.jpg";
+const vania = "https://files.catbox.moe/4nceaq.jpg";
 const manideep = "https://files.catbox.moe/jipxyz.jpg";
 const rithvik = "https://files.catbox.moe/k6ipjz.jpg";
 // =========================================================
@@ -1024,9 +1024,9 @@ export default function Community() {
 
             <section className="community-faculty">
 
-                <div className="community-faculty-label">
+                {/* <div className="community-faculty-label">
                     FACULTY COORDINATOR
-                </div>
+                </div> */}
 
                 <div className="community-faculty-card">
 

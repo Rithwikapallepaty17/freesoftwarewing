@@ -414,7 +414,25 @@
     content: "06";
 }
 
+.project-grid .project-card:nth-child(5)::before {
+    content: "07";
+}
 
+.project-grid .project-card:nth-child(6)::before {
+    content: "08";
+}
+
+.project-grid .project-card:nth-child(7)::before {
+    content: "09";
+}
+
+.project-grid .project-card:nth-child(8)::before {
+    content: "10";
+}
+
+.project-grid .project-card:nth-child(9)::before {
+    content: "11";
+}
 /* =========================================================
    COMMUNITY CTA
    ========================================================= */

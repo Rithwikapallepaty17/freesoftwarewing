@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Logo.css";
-const grietLogo = "https://files.catbox.moe/0333s7.jpg";
+const grietLogo = "";
 
 function Logo() {
     const [hidden, setHidden] = useState(false);
@@ -30,7 +30,7 @@ function Logo() {
             ].join(" ").trim()}
         >
             <img
-                src={grietLogo}
+                src="src\assets\griet-logo.png"
                 alt="GRIET"
                 className="site-logo-griet"
             />
@@ -49,7 +49,7 @@ function Logo() {
             <span className="site-logo-divider" />
 
             <img
-                src="https://files.catbox.moe/ljkddx.jpg"
+                src="src\assets\fsw-logo.png"
                 alt="FSW Logo"
                 className="site-logo-icon"
             />

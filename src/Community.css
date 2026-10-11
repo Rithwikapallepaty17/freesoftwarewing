@@ -202,12 +202,13 @@ community.css 
 .community-faculty-info p {
     max-width: 560px;
 
-    margin: 0;
+    margin: 0 auto;
 
     font-size: 14px;
     line-height: 1.7;
 
     color: var(--gray);
+    text-align: center;
 }
 
 .community-faculty-location {
@@ -1050,7 +1051,7 @@ community.css 
 
     gap: 28px;
 
-    margin-top: 20px;
+    margin-top: 30px;
 
     position: relative;   
     z-index: 100;         
@@ -2282,3 +2283,29 @@ community.css 
     margin-top: -70px; /* pull arrows up */
 }
 
+/* =========================================================
+   MOBILE — push slider arrows below the card
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .community-slider-controls {
+        margin-top: 16px;    /* was -70px → now positive */
+        position: relative;
+        z-index: 100;
+    }
+
+    .community-slider-track {
+        height: 440px;       /* give the card its own room */
+        overflow: hidden;    /* card stays inside */
+    }
+
+    .community-slider-arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+    .community-slider-counter {
+        font-size: 11px;
+    }
+}
