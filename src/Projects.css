@@ -4,6 +4,7 @@
    ========================================================= */
 
 .projects-page {
+    position: relative;
     min-height: 100vh;
 
     background: #f5f7fa;
@@ -104,12 +105,9 @@
 
 .featured-projects {
     display: grid;
-
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
     gap: 70px 28px;
 }
-
 
 /* =========================================================
    FEATURED PROJECT CARD
@@ -130,7 +128,7 @@
     position: relative;
     width: 100%;
     height : 520px;
-    
+    aspect-ratio: 16 / 10;
     overflow: hidden;
     background: #e8edf3;
     border: 1px solid rgba(2, 9, 22, 0.08);
@@ -146,7 +144,7 @@
     display: block;
 
     object-fit: cover;
-
+    object-position: top center;    
     transition:
         transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
         opacity 0.4s ease;
@@ -385,7 +383,6 @@
     padding: 0;
 }
 
-
 /* =========================================================
    SELECTED PROJECT NUMBERS
    ========================================================= */
@@ -394,21 +391,17 @@
     background: #020916;
 }
 
-
 .project-grid .project-card:nth-child(1)::before {
     content: "03";
 }
-
 
 .project-grid .project-card:nth-child(2)::before {
     content: "04";
 }
 
-
 .project-grid .project-card:nth-child(3)::before {
     content: "05";
 }
-
 
 .project-grid .project-card:nth-child(4)::before {
     content: "06";
@@ -422,17 +415,6 @@
     content: "08";
 }
 
-.project-grid .project-card:nth-child(7)::before {
-    content: "09";
-}
-
-.project-grid .project-card:nth-child(8)::before {
-    content: "10";
-}
-
-.project-grid .project-card:nth-child(9)::before {
-    content: "11";
-}
 /* =========================================================
    COMMUNITY CTA
    ========================================================= */
@@ -719,13 +701,6 @@
 .featured-projects .project-card,
 .project-grid .project-card {
     width: 100%;
-}
-
-.featured-projects .project-image,
-.project-grid .project-image {
-    width: 100%;
-    height: 520px;
-    aspect-ratio: auto;
 }
 
 /* =========================================================
@@ -1077,17 +1052,9 @@
     box-shadow: 0 10px 40px rgba(2, 9, 22, 0.06);
 }
 
-.featured-projects .project-image,
-.project-grid .project-image {
-    height: auto;
-    aspect-ratio: 4 / 3;
-    border: 0;
-    border-radius: 20px;
-}
-
 .project-card::before {
-    top: 28px;
-    left: 28px;
+    top: 18px;
+    left: 18px;
     border-radius: 8px;
 }
 
@@ -1312,4 +1279,144 @@
     font-size: 84px;
     font-weight: 600;
     letter-spacing: -0.06em;
+}
+
+
+/* =========================================================
+   PROJECTS PAGE — CUSTOM LOGO
+========================================================= */
+
+.projects-page a.projects-site-logo {
+    position: absolute;
+    top: 22px;
+    left: 60px;
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    gap: 0;
+
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+
+    background: transparent;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.projects-site-logo .site-logo-griet {
+    width: auto;
+    height: 38px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.projects-site-logo .site-logo-griet-text {
+    width: 150px;
+}
+
+.projects-site-logo .site-logo-icon {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.projects-site-logo .site-logo-text {
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+    .projects-page a.projects-site-logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .projects-site-logo .site-logo-griet-text,
+    .projects-site-logo .site-logo-divider {
+        display: none !important;
+    }
+
+    .projects-site-logo .site-logo-griet {
+        height: 34px;
+        width: auto;
+    }
+
+    .projects-site-logo .site-logo-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .projects-site-logo .site-logo-text {
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        color: #3297ff;
+        text-transform: lowercase;
+        margin-left: 2px;
+    }
+}
+
+/* =========================================================
+   GRIET LOGO & TEXT ALIGNMENT FIX
+   ========================================================= */
+
+/* Ensure all items in the logo bar align cleanly to the center */
+.projects-page a.projects-site-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Make text container stack vertically and align with the icon */
+.projects-site-logo .site-logo-griet-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    line-height: 1.15;
+}
+
+/* Bold GRIET heading in crisp white */
+.projects-site-logo .site-logo-griet-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* College name in white */
+.projects-site-logo .site-logo-griet-full {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 7.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1.25;
+    display: block;
+}
+
+/* Vertical divider line */
+.projects-site-logo .site-logo-divider {
+    display: inline-block;
+    width: 1px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 0 4px;
+    flex-shrink: 0;
+}
+
+/* FSW text in white */
+.projects-site-logo .site-logo-text {
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-left: 6px;
 }

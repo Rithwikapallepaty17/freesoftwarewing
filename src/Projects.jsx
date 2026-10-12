@@ -2,16 +2,18 @@ import { Link } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
 import './Projects.css'
 import Navbar from './Navbar'
+import grietLogo from './assets/griet-logo.png'
+import projectsFswLogo from "./assets/fswlogo-projects.png";
 /* =========================================================
    FEATURED PROJECTS
    ========================================================= */
 
   const metavid = 'https://files.catbox.moe/43sypw.jpg'
-const recruitment = 'https://files.catbox.moe/bpsb3p.jpg'
-const rabbit = 'https://files.catbox.moe/ylzt32.jpg'
-const vivitsuProj = 'https://files.catbox.moe/u2enxt.jpg'
-const fswWebsite = 'https://files.catbox.moe/coibwg.jpg'
-const opensource = 'https://files.catbox.moe/0mtsd2.jpg'
+//const recruitment = 'https://files.catbox.moe/bpsb3p.jpg'
+//const rabbit = 'https://files.catbox.moe/ylzt32.jpg'
+//const vivitsuProj = 'https://files.catbox.moe/u2enxt.jpg'
+//const fswWebsite = 'https://files.catbox.moe/coibwg.jpg'
+//const opensource = 'https://files.catbox.moe/0mtsd2.jpg'
 const tablebot = 'https://files.catbox.moe/em4qfs.jpg'
 const gitScavenger = 'https://files.catbox.moe/hghmta.jpg'
 const grietStudySphere = 'https://files.catbox.moe/yt976w.jpg'
@@ -19,7 +21,7 @@ const satops = 'https://files.catbox.moe/kmpx52.jpg'
 const ciris = 'https://files.catbox.moe/1v38mi.jpg'
 
 const featuredProjects = [
-  {
+  /*{
     title: 'FSW Recruitment',
     description:
       'A recruitment platform built for managing applications and community onboarding.',
@@ -28,6 +30,7 @@ const featuredProjects = [
     image: recruitment,
     github: null,
   },
+  */
   {
     title: 'MetaVid',
     description:
@@ -37,10 +40,18 @@ const featuredProjects = [
     image: metavid, 
     github: 'https://github.com/akshaydev-git/Project-Metavid',
   },
+  {
+    title: 'CIRIS',
+    description: 'A security intelligence and incident response tracker built to document vulnerabilities, correlate security events, and manage collaborative mitigation workflows.',
+    alt: 'CIRIS',
+    tags: ['TODO'],
+    image: ciris,
+    github: 'https://github.com/shaik-sohel-cyber/ciris',
+  },
 ]
 
 const projects = [
-  {
+  /*{
     title: 'Rabbit',
     description:
       'A language assistant with translation, grammar checking, dictionary and summarization.',
@@ -76,6 +87,7 @@ const projects = [
     image: opensource,
     github: null,
   },
+  */
   {
     title: 'TableBot',
     description:
@@ -111,28 +123,20 @@ const projects = [
     image: satops,
     github: 'https://github.com/ShaikNada/satOps',
   },
-  {
-    title: 'CIRIS',
-    description: 'A security intelligence and incident response tracker built to document vulnerabilities, correlate security events, and manage collaborative mitigation workflows.',
-    alt: 'CIRIS',
-    tags: ['TODO'],
-    image: ciris,
-    github: 'https://github.com/shaik-sohel-cyber/ciris',
-  },
 ]
 
 function ProjectCard({ project }) {
   const cardContent = (
     <>
       <div className="project-image">
-  {project.image ? (
-    <img src={project.image} alt={project.alt} />
-  ) : (
-    <div className="project-image-placeholder">
-      <span>{project.title.charAt(0)}</span>
-    </div>
-  )}
-</div>
+        {project.image ? (
+          <img src={project.image} alt={project.alt} />
+        ) : (
+          <div className="project-image-placeholder">
+            <span>{project.title.charAt(0)}</span>
+          </div>
+        )}
+      </div>
 
       <div className="project-info">
         <div className="project-info-top">
@@ -148,7 +152,7 @@ function ProjectCard({ project }) {
         <p>{project.description}</p>
       </div>
     </>
-  )
+  );
 
   if (project.github) {
     return (
@@ -161,38 +165,66 @@ function ProjectCard({ project }) {
       >
         {cardContent}
       </a>
-    )
+    );
   }
 
   return (
     <article className="project-card">
       {cardContent}
     </article>
-  )
+  );
 }
-
-
-/* =========================================================
-   PROJECTS PAGE
-   ========================================================= */
 
 function Projects() {
   return (
     <div className="projects-page">
-      {/* ================= NAVBAR ================= */}
+
+      {/* PROJECTS PAGE LOGO */}
+      <Link to="/" className="site-logo projects-site-logo">
+        <img
+          src={grietLogo}
+          alt="GRIET"
+          className="site-logo-griet"
+        />
+
+        <div className="site-logo-griet-text">
+          <span className="site-logo-griet-name">GRIET</span>
+
+          <span className="site-logo-griet-full">
+            GOKARAJU RANGARAJU
+            <br />
+            INSTITUTE OF ENGINEERING
+            <br />
+            &amp; TECHNOLOGY
+          </span>
+        </div>
+
+        <span className="site-logo-divider" />
+
+        <img
+          src={projectsFswLogo}
+          alt="FSW Logo"
+          className="site-logo-icon"
+        />
+
+        <span className="site-logo-text">FSW</span>
+      </Link>
+
+      {/* NAVBAR */}
       <Navbar />
 
-      {/* ================= MAIN CONTENT ================= */}
+      {/* MAIN CONTENT */}
       <main>
-        {/* HERO */}
         <section className="project-hero">
           <div className="project-hero-content">
             <p className="eyebrow">
               FREE SOFTWARE WING · PROJECTS
             </p>
+
             <h1>
-  Explore <em>Our</em> Projects
-</h1>
+              Explore <em>Our</em> Projects
+            </h1>
+
             <p className="hero-description">
               Discover the projects built by our community
               through code, creativity and open source.
@@ -210,27 +242,21 @@ function Projects() {
           </div>
         </section>
 
-        
-
-          {/* ================= OTHER PROJECTS ================= */}
-
-          <section className="all-projects">
-
-              <div className="project-grid">
-                  {projects.map((project) => (
-                      <ProjectCard
-                          key={project.title}
-                          project={project}
-                      />
-                  ))}
-              </div>
-
-          </section>    
-        
+        {/* OTHER PROJECTS */}
+        <section className="all-projects">
+          <div className="project-grid">
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.title}
+                project={project}
+              />
+            ))}
+          </div>
+        </section>
       </main>
-
-       </div>
+    </div>
   )
 }
+
 
 export default Projects

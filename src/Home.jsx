@@ -131,34 +131,11 @@ function Home() {
         </section>
 
         {/* =========================
-            02 — FACULTY
-        ========================= */}
-        <section className="faculty-section" id="faculty">
-          <div className="faculty-card">
-            <div className="faculty-image">
-              <img src={raviKiran} alt="K. Ravikiran" />
-            </div>
-
-            <div className="faculty-info">
-              <p className="faculty-role">FACULTY COORDINATOR</p>
-              <h3>K. Ravikiran</h3>
-              <p>
-                Guiding the Free Software Wing at GRIET
-                and encouraging students to explore,
-                build and contribute to the open-source
-                ecosystem.
-              </p>
-              <span className="faculty-location">GRIET · HYDERABAD</span>
-            </div>
-          </div>
-        </section>
-
-        {/* =========================
             03 — ABOUT
         ========================= */}
         <section className="about-section" id="about">
           <div className="section-heading">
-            <div className="section-number">03 — ABOUT</div>
+            <div className="section-number">02 — ABOUT</div>
           </div>
 
           <div className="about-content">
@@ -196,7 +173,7 @@ function Home() {
         <section className="what-we-do-section" id="what-we-do">
           <div className="what-we-do-container">
             <div className="what-we-do-header">
-              <div className="what-we-do-tag">04 — WHAT WE DO</div>
+              <div className="what-we-do-tag">03 — WHAT WE DO</div>
               
               {/* Restored to original signature editorial style */}
               <h2 className="what-we-do-title">
@@ -277,7 +254,7 @@ function Home() {
         ========================= */}
         <section className="events-section" id="events">
           <div className="section-heading events-heading">
-            <p className="section-number">03 / EVENTS</p>
+            <p className="section-number">04 / EVENTS</p>
             <h2>
               What we've
               <em> been building.</em>
@@ -294,7 +271,7 @@ function Home() {
       <div className="event-slide-info">
         <div className="event-slide-header">
           <span>TECHNICAL FEST</span>
-          <span className="event-status is-upcoming">UPCOMING</span>
+          <span className="event-status is-completed">COMPLETED</span>
         </div>
         <h3>Vivitsu '26</h3>
       </div>
@@ -413,7 +390,7 @@ function Home() {
         ========================= */}
         <section className="projects-section" id="projects">
           <div className="section-heading">
-            <div className="section-number">06 — PROJECTS</div>
+            <div className="section-number">05 — PROJECTS</div>
             <h2>
               Things we've
               <br />
@@ -459,7 +436,7 @@ function Home() {
         ========================= */}
         <section className="tech-team-section" id="tech-team">
           <div className="tech-team-top">
-            <div className="section-number">07 / TECH TEAM</div>
+            <div className="section-number">06 / TECH TEAM</div>
             <div className="tech-team-intro">
               <h2>
                 Build. Break.

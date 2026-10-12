@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./Home";
 import About from "./About";
@@ -10,47 +10,32 @@ import Events from "./Events";
 import EventReport from "./pages/EventReport";
 import Footer from "./Footer";
 import Logo from "./Logo";
+
 function App() {
-    return (
-        <>
-            <ScrollToTop />
-            <Logo />
+  const location = useLocation();
 
-            <Routes>
-                <Route path="/" element={<Home />} />
+  // Hide the global logo on the Projects page
+  const hideLogo = location.pathname === "/projects";
 
-                <Route path="/about" element={<About />} />
+  return (
+    <>
+      <ScrollToTop />
 
-                <Route
-                    path="/tech-team"
-                    element={<TechTeam />}
-                />
+      {!hideLogo && <Logo />}
 
-                <Route
-                    path="/projects"
-                    element={<Projects />}
-                />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/tech-team" element={<TechTeam />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/events/:slug" element={<EventReport />} />
+      </Routes>
 
-                <Route
-                    path="/community"
-                    element={<Community />}
-                />
-
-                <Route
-                    path="/events"
-                    element={<Events />}
-                />
-
-                <Route
-                    path="/events/:slug"
-                    element={<EventReport />}
-                />
-            </Routes>
-
-            {/* CONSTANT FOOTER */}
-            <Footer />
-        </>
-    );
+      <Footer />
+    </>
+  );
 }
 
 export default App;

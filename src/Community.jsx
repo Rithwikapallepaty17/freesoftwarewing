@@ -13,8 +13,8 @@ const raviKiran = "https://files.catbox.moe/j5ksng.jpg";
 
 // General
 const harshini = "https://files.catbox.moe/1f9y3q.jpg";
-const sahastra = "https://files.catbox.moe/dni4zf.jpg";
-const revanth = "https://files.catbox.moe/o5ckww.jpg";
+const sahastra = "https://files.catbox.moe/l8ayos.jpg";
+const revanth = "https://files.catbox.moe/ojb63i.jpg";
 const varun = "https://files.catbox.moe/4igx6q.jpg";
 
 // Technical
@@ -45,7 +45,7 @@ const siddarth = "https://files.catbox.moe/ea0n1a.jpg";
 
 // Logistics
 const jeshwanth = "https://files.catbox.moe/wnxqju.jpg";
-const satwik = "https://files.catbox.moe/ncccq8.jpg";
+const satwik = "https://files.catbox.moe/c427su.jpg";
 
 // Publicity
 const lavanya = "https://files.catbox.moe/0a7h6v.jpg";
