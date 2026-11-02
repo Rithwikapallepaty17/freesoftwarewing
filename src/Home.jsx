@@ -11,9 +11,9 @@ import "./Style.css";
 const raviKiran = "/team/ravikiran.jpg";
 const metavid = "/projects/metavid.jpg";
 const git_scavenger = "/projects/git-scavenger-hunt.png";
-const vivitsu24 = "/events/vivitsu24.jpg";
-const fossFest = "/events/fossfest.jpg";
-const vivitsu26 = "/events/vivitsu26.jpg";
+const vivitsu24 = "/events/vivitsu-2024-stage.jpg";
+const fossFest = "/events/foss-fest-24.jpeg";
+const vivitsu26 = "/events/vivitsu-2026-stage.jpg";
 
 const projectsData = [
     {
