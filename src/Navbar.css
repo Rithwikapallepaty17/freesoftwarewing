@@ -65,15 +65,11 @@
     transform: translateY(-1px);
 }
 
-
-.floating-menu-button.menu-active {
+.floating-navigation.menu-open .floating-menu-button {
     border-color: #111;
-
     background: #111;
-
     color: #fff;
 }
-
 
 /* =========================================================
    POPUP MENU
@@ -110,13 +106,10 @@
 }
 
 
-.menu-popup-open {
+ .floating-navigation.menu-open .menu-popup {
     opacity: 1;
-
     visibility: visible;
-
     transform: translateY(0) scale(1);
-
     pointer-events: auto;
 }
 
@@ -251,36 +244,3 @@
 
 }
 
-/* ========================================================= 
-   HOVER-TRIGGERED MENU
-========================================================= */
-
-/* Invisible bridge covering the 10px gap between button and popup */
-.floating-navigation::before {
-    content: "";
-    position: absolute;
-    top: 38px;
-    right: 0;
-    width: 100px;
-    height: 16px;
-    pointer-events: none;
-}
-
-.floating-navigation:hover::before {
-    pointer-events: auto;
-}
-
-/* 1. Open popup ONLY when hovering the pill or popup itself */
-.floating-navigation:hover .menu-popup {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0) scale(1);
-    pointer-events: auto;
-}
-
-/* 2. Darken pill while the menu is open */
-.floating-navigation:hover .floating-menu-button {
-    border-color: #111;
-    background: #111;
-    color: #fff;
-}

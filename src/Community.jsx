@@ -8,54 +8,58 @@ import Navbar from "./Navbar";
 // Keep commented until you have the images.
 // =========================================================
 
-// Faculty Coordinator
-const raviKiran = "https://files.catbox.moe/j5ksng.jpg";
+// =========================================================
+// IMAGE PATHS (served directly from public/team/)
+// =========================================================
 
-// General
-const harshini = "https://files.catbox.moe/1f9y3q.jpg";
-const sahastra = "https://files.catbox.moe/dni4zf.jpg";
-const revanth = "https://files.catbox.moe/o5ckww.jpg";
-const varun = "https://files.catbox.moe/4igx6q.jpg";
+// Faculty Coordinator
+const raviKiran = "/team/ravikiran.jpg";
+
+// Admin / Core
+const varun = "/team/varun.jpg";
+const harshini = "/team/harshini.jpg";
+const revanth = "/team/revanth.jpg";
+const sahastra = "/team/sahastra.jpg";
 
 // Technical
-const rithwika = "https://files.catbox.moe/q26l24.jpg";
-const maniteja = "https://files.catbox.moe/nkl9mu.jpg";
-const Akshay = "https://files.catbox.moe/42rvgy.jpg";
+const Akshay = "/team/akshay.jpg";
+const rithwika = "/team/rithwika.jpg";
+const maniteja = "/team/maniteja.jpg";
 
 // Public Relations
-const raniPrasanna = "https://files.catbox.moe/q1ajc8.jpg";
-const jashwanth = "https://files.catbox.moe/ofm412.jpg";
-const suhreeth = "https://files.catbox.moe/rghwvz.jpg";
+const jashwanth = "/team/jashwanth.jpg";
+const raniPrasanna = "/team/raniprasanna.jpg";
 
 // Design & Social Media
-const akhila = "https://files.catbox.moe/tvjk4a.jpg";
-const laxmiPriya = "https://files.catbox.moe/en6c7w.jpg";
-const avinash = "https://files.catbox.moe/a4wvcg.jpg";
-const harshitha = "https://files.catbox.moe/6o4b56.jpg";
+const akhila = "/team/akhila.jpg";
+const laxmiPriya = "/team/laxmipriya.jpg";
+const avinash = "/team/avinash.jpg";
+const harshitha = "/team/harshitha.jpg";
 
 // Arts
-const roopa = "https://files.catbox.moe/ly4800.jpg";
-const abhiPreethi = "https://files.catbox.moe/wg7mwk.jpg";
-const shalini = "https://files.catbox.moe/ayjdax.jpg";
+const roopa = "/team/roopa.jpg";
+const shalini = "/team/shalini.png";
+const abhiPreethi = "/team/abhipreethi.jpg";
 
 // Event Management
-const shivani = "https://files.catbox.moe/w4lgd3.jpg";
-const hasini = "https://files.catbox.moe/hozd9d.jpg";
-const siddarth = "https://files.catbox.moe/ea0n1a.jpg";
+const siddarth = "/team/siddarth.jpg";
+const shivani = "/team/shivani.jpg";
+const hasini = "/team/hasini.jpg";
 
 // Logistics
-const jeshwanth = "https://files.catbox.moe/wnxqju.jpg";
-const satwik = "https://files.catbox.moe/ncccq8.jpg";
+const jeshwanth = "/team/jeshwanth.jpg";
+const satwik = "/team/satwik.jpg";
 
 // Publicity
-const lavanya = "https://files.catbox.moe/0a7h6v.jpg";
-const keerthi = "https://files.catbox.moe/pbvvcq.jpg";
-const geethika = "https://files.catbox.moe/ok0dj8.jpg";
+const suhreeth = "/team/suhreeth.jpg";
+const lavanya = "/team/lavanya.jpg";
+const keerthi = "/team/keerthi.jpg";
+const geethika = "/team/geethika.jpg";
 
 // Documentation
-const vania = "https://files.catbox.moe/4nceaq.jpg";
-const manideep = "https://files.catbox.moe/jipxyz.jpg";
-const rithvik = "https://files.catbox.moe/k6ipjz.jpg";
+const vania = "/team/vania.jpg";
+const manideep = "/team/manideep.jpg";
+const rithvik = "/team/rithvik.jpg";
 // =========================================================
 // ICONS
 // =========================================================
