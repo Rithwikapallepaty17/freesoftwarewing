@@ -4,12 +4,16 @@ import Navbar from "./Navbar";
 import events from "./eventData";
 import "./Style.css";
 
-const raviKiran = "https://files.catbox.moe/j5ksng.jpg";
-const metavid = "https://files.catbox.moe/8n9ubv.jpg";
-const git_scavenger = "https://files.catbox.moe/hghmta.jpg";
-const vivitsu24 = "https://files.catbox.moe/k02usz.jpg";
-const fossFest = "https://files.catbox.moe/0b4r7v.jpg";
-const vivitsu26 = "https://files.catbox.moe/jf2hn6.jpg";
+// =========================================================
+// LOCAL ASSET PATHS (served directly from public/)
+// =========================================================
+
+const raviKiran = "/team/ravikiran.jpg";
+const metavid = "/projects/metavid.jpg";
+const git_scavenger = "/projects/git-scavenger-hunt.png";
+const vivitsu24 = "/events/vivitsu24.jpg";
+const fossFest = "/events/fossfest.jpg";
+const vivitsu26 = "/events/vivitsu26.jpg";
 
 const projectsData = [
     {

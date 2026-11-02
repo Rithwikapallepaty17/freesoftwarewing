@@ -1,44 +1,44 @@
-const vivitsu2024Stage = "https://files.catbox.moe/k02usz.jpg";
-const fossFest24 = "https://files.catbox.moe/5s3ei5.jpg";
-const fossFestStage = "https://files.catbox.moe/0b4r7v.jpg";
-const fusionTech2025 = "https://files.catbox.moe/15xj71.jpg";
-const photoFiesta2022 = "https://files.catbox.moe/0j6vzh.jpg";
-const techBola2022 = "https://files.catbox.moe/71jo71.jpg";
-const vivitsu2026Stage = "https://files.catbox.moe/jf2hn6.jpg";
-const vivitsu23 = "https://files.catbox.moe/jzyswh.jpg";
-const vivitsu25 = "https://files.catbox.moe/izvoy6.jpg";
-const sih = "https://files.catbox.moe/lqohin.jpg";
-const techbola = "https://files.catbox.moe/eu6htm.jpg";
-const dbms = "https://files.catbox.moe/u8bz95.jpg";
-const pyhub = "https://files.catbox.moe/f4it1t.jpg";
-const cyberbloom = "https://files.catbox.moe/i0n0k2.jpg";
-const lexeme = "https://files.catbox.moe/i1vpl5.jpg";
+// =========================================================
+// LOCAL EVENT IMAGES (served directly from public/events/)
+// =========================================================
 
-//AI images
-const img01FutureGuidance = "https://files.catbox.moe/xcicf0.jpg";
-const img02CyberSecurity = "https://files.catbox.moe/e0nmhd.jpg";
-const img03WebTalk = "https://files.catbox.moe/uu65hj.jpg";
-const img04QuizEma = "https://files.catbox.moe/4fx95w.jpg";
-const img05EQuizFoss = "https://files.catbox.moe/uzcmla.jpg";
-const img06Picturize = "https://files.catbox.moe/hegjf1.jpg";
-const img07SciComputing = "https://files.catbox.moe/uqvp92.jpg";
-const img08Chatbot = "https://files.catbox.moe/kh8qdh.jpg";
-const img09WebScraping = "https://files.catbox.moe/nf9j3t.jpg";
-const img10Orientation = "https://files.catbox.moe/6e5y84.jpg";
-const img11Quiz = "https://files.catbox.moe/zn1lt9.jpg";
-const img12GuestOrient = "https://files.catbox.moe/8n1ctp.jpg";
-const img13IBM = "https://files.catbox.moe/z0on1u.jpg";
-const img14SciComputing2018 = "https://files.catbox.moe/j4cjsi.jpg";
-const img15GuestFreeSW = "https://files.catbox.moe/9nwakd.jpg";
-const img16GuestML = "https://files.catbox.moe/m5u2mn.jpg";
+const sih = "/events/sih.jpg";
+const vivitsu2026Stage = "/events/vivitsu-2026-stage.jpg";
+const vivitsu2024Stage = "/events/vivitsu-2024-stage.jpg";
+const vivitsu25 = "/events/vivitsu-25-crowd.jpg";
+const vivitsu23 = "/events/vivitsu-23.png";
+const fossFest24 = "/events/foss-fest-24.jpeg";
+const fossFestStage = "/events/foss-fest-stage.jpeg";
+const fusionTech2025 = "/events/fusion-tech-2025.jpg";
+const photoFiesta2022 = "/events/photo-fiesta-2022.png";
+const techBola2022 = "/events/tech-bola-2022.png";
+const techbola = "/events/tech-bola.jpg";
+const dbms = "/events/dbms-crowd.jpg";
+const pyhub = "/events/pyhub.jpeg";
+const cyberbloom = "/events/cyberbloom.webp";
+const lexeme = "/events/lexeme.jpeg";
+
+// Archive & Sessions
+const img01FutureGuidance = "/events/01_seminar_on_future_guidance.png";
+const img02CyberSecurity = "/events/02_seminar_on_cyber_security.png";
+const img03WebTalk = "/events/03_introduction_to_free_software_web_talk.png";
+const img04QuizEma = "/events/04_quiz_ema_talkies.png";
+const img05EQuizFoss = "/events/05_e_quiz_foss_awareness.png";
+const img06Picturize = "/events/06_picturize_the_fact.png";
+const img07SciComputing = "/events/07_introduction_to_scientific_computing_using_python.png";
+const img08Chatbot = "/events/08_machine_learning_on_chatbot_design.png";
+const img09WebScraping = "/events/09_hands_on_web_scraping.png";
+const img10Orientation = "/events/10_orientation_on_free_software.png";
+const img11Quiz = "/events/11_quiz.png";
+const img12GuestOrient = "/events/12_guest_talk_orientation_on_free_software.png";
+const img13IBM = "/events/13_ibm_expert_session_big_data_analytics.png";
+const img14SciComputing2018 = "/events/14_workshop_introductory_scientific_computing_with_python.png";
+const img15GuestFreeSW = "/events/15_guest_talk_on_free_software.png";
+const img16GuestML = "/events/16_guest_talk_on_introduction_to_machine_learning.png";
 
 const events = [
-
-  // =========================================================
   // 2026
-  // =========================================================
-
-    {
+  {
     slug: "sih-2026",
     year: 2026,
     title: "Smart India Hackathon (SIH)",
@@ -46,27 +46,9 @@ const events = [
     category: "HACKATHON",
     description:
       "A nationwide initiative by the Ministry of Education to give students a platform to solve real-world problems and foster a culture of innovation and problem-solving.",
-    details: `
-    Smart India Hackathon (SIH) is a nationwide initiative conducted by the
-    Ministry of Education, Government of India, to give students a platform
-    to solve some of the most pressing problems we face in our daily lives,
-    and to inculcate a culture of product innovation and a mindset of
-    problem-solving.
-
-    At the institutional level, GRIET hosted the internal rounds on
-    3 September 2026, where teams presented their ideas and prototypes
-    before a panel of judges. The teams whose solutions advanced were
-    evaluated again on 11 September 2026 for the final selection.
-
-    The event brought together students from multiple disciplines who
-    collaborated to develop innovative solutions across domains such as
-    healthcare, agriculture, smart automation, sustainability, and
-    education.
-  `,
     image: sih,
     report: "https://www.griet.ac.in/2026/FSW%20Report%202025-2026.pdf",
   },
-
   {
     slug: "future-guidance-2026",
     year: 2026,
@@ -75,22 +57,9 @@ const events = [
     category: "SEMINAR",
     description:
       "A session focused on guiding students towards higher education, international opportunities, admissions, and future career pathways.",
-    details: `
-    The Seminar on Future Guidance was conducted to provide students with
-    valuable guidance regarding higher education and future career pathways.
-
-    The session focused on opportunities for higher studies, international
-    education, admissions, and the different pathways students can explore
-    after completing their undergraduate education.
-
-    The event helped students gain a broader understanding of the options
-    available to them and make more informed decisions about their future.
-  `,
     image: img01FutureGuidance,
-    report:
-      "https://www.griet.ac.in/2026/FSW%20Report%202025-2026.pdf",
+    report: "https://www.griet.ac.in/2026/FSW%20Report%202025-2026.pdf",
   },
-
   {
     slug: "vivitsu-26",
     year: 2026,
@@ -99,24 +68,9 @@ const events = [
     category: "HACKATHON",
     description:
       "A 24-hour hackathon bringing students together to build innovative solutions across multiple technology domains.",
-    details: `
-    VIVITSU'26 was a 24-hour hackathon that brought students together
-    to work on innovative solutions across multiple technology domains.
-
-    Participants worked collaboratively in teams, transforming their
-    ideas into practical solutions while working within the constraints
-    of a continuous 24-hour development challenge.
-
-    The event provided an environment for students to apply their
-    technical knowledge, explore new technologies, collaborate with
-    their peers, and develop solutions to challenging problems.
-  `,
-
     image: vivitsu2026Stage,
-    report:
-      "https://www.griet.ac.in/2026/FSW%20Report%202025-2026.pdf",
+    report: "https://www.griet.ac.in/2026/FSW%20Report%202025-2026.pdf",
   },
-
   {
     slug: "cyber-security-seminar-2026",
     year: 2026,
@@ -125,28 +79,22 @@ const events = [
     category: "CYBER SECURITY",
     description:
       "A session exploring cybersecurity awareness, ethics, industry trends, career opportunities, and digital security.",
-    details: `
-    The Seminar on Cyber Security focused on building awareness about
-    cybersecurity and the importance of maintaining digital security
-    in an increasingly connected world.
-
-    The session covered cybersecurity ethics, current industry trends,
-    career opportunities, and important aspects of digital security.
-
-    The event provided students with an opportunity to understand the
-    growing relevance of cybersecurity and the different opportunities
-    available in this field.
-  `,
     image: img02CyberSecurity,
-    report:
-      "https://www.griet.ac.in/2026/FSW%20Report%202025-2026.pdf",
+    report: "https://www.griet.ac.in/2026/FSW%20Report%202025-2026.pdf",
   },
 
-
-  // =========================================================
   // 2025
-  // =========================================================
-
+  {
+    slug: "fusion-tech-2025",
+    year: 2025,
+    title: "Fusion Tech",
+    date: "22 August 2025",
+    category: "WORKSHOP",
+    description:
+      "A hands-on event covering open-source tools including system administration, version control, containerization, and LLM/API integration.",
+    image: fusionTech2025,
+    report: "https://www.griet.ac.in/2026/FSW%20Report%202024-2025.pdf",
+  },
   {
     slug: "vivitsu-25",
     year: 2025,
@@ -155,52 +103,11 @@ const events = [
     category: "HACKATHON",
     description:
       "A national-level hackathon where students worked together to create solutions for real-world problem statements.",
-    details: `
-    VIVITSU'25 was a national-level hackathon that brought students
-    together to work on real-world problem statements.
-
-    Participants collaborated in teams to develop innovative solutions,
-    applying their technical knowledge and problem-solving skills to
-    practical challenges.
-
-    The hackathon provided students with an opportunity to build,
-    experiment, collaborate, and transform their ideas into working
-    solutions.
-  `,
     image: vivitsu25,
-    report:
-      "https://www.griet.ac.in/2026/FSW%20Report%202024-2025.pdf",
+    report: "https://www.griet.ac.in/2026/FSW%20Report%202024-2025.pdf",
   },
 
-  {
-  slug: "fusion-tech-2025",
-  year: 2025,
-  title: "Fusion Tech",
-  date: "22 August 2025",
-  category: "WORKSHOP",
-  description:
-    "A hands-on event covering open-source tools including system administration, version control, containerization, and LLM/API integration.",
-  details: `
-    Fusion Tech was a hands-on technical event focused on modern
-    open-source tools and technologies.
-
-    The sessions covered system administration, version control,
-    containerization, and the integration of Large Language Models
-    (LLMs) and APIs.
-
-    The event provided participants with practical exposure to
-    tools and techniques used in contemporary software development.
-  `,
-  image: fusionTech2025,
-  report: "https://www.griet.ac.in/2026/FSW%20Report%202024-2025.pdf",
-},
-
-
-  // =========================================================
   // 2024
-  // =========================================================
-  
-
   {
     slug: "foss-fest-2024",
     year: 2024,
@@ -209,20 +116,9 @@ const events = [
     category: "WORKSHOP",
     description:
       "A hands-on technical event covering Git, system administration, version control, and containerization.",
-     details: `
-    FOSS FEST was a hands-on technical event focused on free and
-    open-source technologies.
-
-    The event covered Git, system administration, version control,
-    and containerization, giving participants an opportunity to
-    explore practical tools and technologies used in software
-    development and open-source environments.
-  `,  
     image: fossFest24,
-    report:
-      "https://www.griet.ac.in/2026/FSW%20Report%202024-2025.pdf",
+    report: "https://www.griet.ac.in/2026/FSW%20Report%202024-2025.pdf",
   },
-
   {
     slug: "vivitsu-24",
     year: 2024,
@@ -231,25 +127,11 @@ const events = [
     category: "HACKATHON",
     description:
       "The second round of the hackathon franchise, bringing together teams to work on real-world problems and develop innovative solutions during a 24-hour challenge.",
-    details: `
-    VIVITSU-24 was the second round of the VIVITSU hackathon franchise.
-
-    The event brought together participants to work on real-world problem
-    statements and develop innovative solutions within a 24-hour challenge.
-
-    Participants collaborated in teams, explored different technologies,
-    and transformed their ideas into working solutions.
-  `,  
     image: vivitsu2024Stage,
-    report:
-      "https://www.griet.ac.in/2026/FSW%20Report%202024-2025.pdf",
+    report: "https://www.griet.ac.in/2026/FSW%20Report%202024-2025.pdf",
   },
 
-
-  // =========================================================
   // 2023
-  // =========================================================
-
   {
     slug: "cyber-bloom",
     year: 2023,
@@ -258,22 +140,9 @@ const events = [
     category: "CYBER SECURITY",
     description:
       "A cybersecurity-focused event introducing participants to digital security concepts, awareness, and practical security practices.",
-    details: `
-    Cyber Bloom was a cybersecurity-focused workshop designed to
-    introduce students to important concepts in digital security.
-
-    The event covered areas including threat detection, encryption,
-    secure data handling, and the use of cybersecurity tools.
-
-    The workshop provided participants with an opportunity to explore
-    cybersecurity concepts and understand their relevance in the
-    digital environment.
-  `,
     image: cyberbloom,
-    report:
-      "https://www.griet.ac.in/2024/FSW%20Report%202023-2024.pdf",
+    report: "https://www.griet.ac.in/2024/FSW%20Report%202023-2024.pdf",
   },
-
   {
     slug: "vivitsu-23",
     year: 2023,
@@ -282,27 +151,11 @@ const events = [
     category: "HACKATHON",
     description:
       "A 24-hour hackathon where students collaborated to develop solutions for real-world problem statements.",
-    details: `
-    VIVITSU'23 was a 24-hour hackathon that brought students
-    together to collaborate on real-world problem statements.
-
-    Participants worked in teams to develop solutions, applying
-    their technical knowledge, creativity, and problem-solving
-    skills throughout the hackathon.
-
-    The event provided a collaborative environment where students
-    could turn their ideas into practical solutions.
-  `,
     image: vivitsu23,
-    report:
-      "https://www.griet.ac.in/2024/FSW%20Report%202023-2024.pdf",
+    report: "https://www.griet.ac.in/2024/FSW%20Report%202023-2024.pdf",
   },
 
-
-  // =========================================================
   // 2022
-  // =========================================================
-
   {
     slug: "tech-bola-2",
     year: 2022,
@@ -311,22 +164,9 @@ const events = [
     category: "TECHNICAL EVENT",
     description:
       "The second edition of Tech-Bola, a technical game that combined technology, questions, and interactive challenges.",
-    details: `
-    Tech-Bola 2.0 was a technical event designed around an engaging
-    game and quiz format.
-
-    The event challenged participants with technology-based questions
-    while combining technical knowledge with an interactive and
-    competitive experience.
-
-    It provided participants with an opportunity to test their
-    technical understanding in an engaging format.
-  `,
     image: techBola2022,
-    report:
-      "https://www.griet.ac.in/2023/FSW%20Report%202022-2023.pdf",
+    report: "https://www.griet.ac.in/2023/FSW%20Report%202022-2023.pdf",
   },
-
   {
     slug: "photo-fiesta-gimp-it-up",
     year: 2022,
@@ -335,22 +175,9 @@ const events = [
     category: "FOSS",
     description:
       "A creative event centred around GIMP, encouraging participants to explore image editing and digital creativity using free and open-source software.",
-    details: `
-    Photo Fiesta – GIMP IT UP was a creative hands-on event focused
-    on image editing and digital creativity using GIMP.
-
-    The event introduced participants to the possibilities of using
-    free and open-source software for creating and editing digital
-    images.
-
-    Participants were encouraged to explore their creativity while
-    gaining practical experience with GIMP.
-  `,
     image: photoFiesta2022,
-    report:
-      "https://www.griet.ac.in/2023/FSW%20Report%202022-2023.pdf",
+    report: "https://www.griet.ac.in/2023/FSW%20Report%202022-2023.pdf",
   },
-
   {
     slug: "lexeme-quest",
     year: 2022,
@@ -359,27 +186,11 @@ const events = [
     category: "QUIZ",
     description:
       "A technical conjuncture of FOSS, presented as a multi-level quiz designed to test participants' technical knowledge.",
-    details: `
-    The Lexeme Quest was a technical conjuncture of FOSS presented
-    in the form of an online quiz.
-
-    The event featured multiple levels designed to test and challenge
-    participants' technical knowledge.
-
-    Through its quiz-based format, the event encouraged participants
-    to engage with technical concepts while exploring the world of
-    free and open-source software.
-  `,
     image: lexeme,
-    report:
-      "https://www.griet.ac.in/2022/FSW%20REPORT%202021-2022.pdf",
+    report: "https://www.griet.ac.in/2022/FSW%20REPORT%202021-2022.pdf",
   },
 
-
-  // =========================================================
   // 2021
-  // =========================================================
-
   {
     slug: "tech-bola",
     year: 2021,
@@ -388,22 +199,9 @@ const events = [
     category: "TECHNICAL EVENT",
     description:
       "A technical event combining technology, quizzes, and interactive challenges in an engaging format.",
-    details: `
-    Tech-Bola was a technical event organised in an engaging and
-    interactive format.
-
-    The event combined technology-based challenges and quiz elements,
-    encouraging participants to apply their technical knowledge while
-    taking part in an interactive experience.
-
-    It provided students with an opportunity to test their knowledge
-    and participate in a technology-focused activity.
-  `,
     image: techbola,
-    report:
-      "https://www.griet.ac.in/2022/FSW%20REPORT%202021-2022.pdf",
+    report: "https://www.griet.ac.in/2022/FSW%20REPORT%202021-2022.pdf",
   },
-
   {
     slug: "database-management",
     year: 2021,
@@ -412,22 +210,9 @@ const events = [
     category: "WORKSHOP",
     description:
       "A session focused on database management and application development, introducing participants to practical tools and concepts.",
-    details: `
-    The Database Management and Application Development event focused
-    on database management and application development.
-
-    The session introduced participants to concepts and tools related
-    to working with databases and developing applications.
-
-    It provided students with an opportunity to gain practical
-    exposure to database-related technologies and application
-    development.
-  `,
     image: dbms,
-    report:
-      "https://www.griet.ac.in/2022/FSW%20REPORT%202021-2022.pdf",
+    report: "https://www.griet.ac.in/2022/FSW%20REPORT%202021-2022.pdf",
   },
-
   {
     slug: "pyhub-workshop",
     year: 2021,
@@ -436,50 +221,22 @@ const events = [
     category: "PYTHON",
     description:
       "A beginner-friendly Python workshop covering programming fundamentals, GitHub, and hands-on activities.",
-    details: `
-    PyHub was a workshop focused on introducing participants to
-    Python programming.
-
-    The workshop covered programming fundamentals along with GitHub
-    and hands-on activities, giving participants an opportunity to
-    learn through practical exercises.
-
-    The event was designed to help participants build a foundation
-    in Python and gain experience with related development tools.
-  `,
     image: pyhub,
-    report:
-      "https://www.griet.ac.in/2022/FSW%20REPORT%202021-2022.pdf",
+    report: "https://www.griet.ac.in/2022/FSW%20REPORT%202021-2022.pdf",
+  },
+  {
+    slug: "free-software-webtalk-2021",
+    year: 2021,
+    title: "Introduction to Free Software — Web-Talk",
+    date: "27 March 2021",
+    category: "FOSS",
+    description:
+      "An online web-talk introducing students to free software, licensing, and open-source alternatives to proprietary tools.",
+    image: img03WebTalk,
+    report: "https://www.griet.ac.in/images/FSWReport%202020-21.pdf",
   },
 
-  {
-  slug: "free-software-webtalk-2021",
-  year: 2021,
-  title: "Introduction to Free Software — Web-Talk",
-  date: "27 March 2021",
-  category: "FOSS",
-  description:
-    "An online web-talk introducing students to free software, licensing, and open-source alternatives to proprietary tools.",
-  details: `
-    An online web-talk conducted to build awareness about free
-    and open-source software.
-
-    The speaker introduced participants to the basics of software
-    freedom, free software licensing, and practical alternatives
-    to common proprietary tools.
-
-    The session was live-streamed and included an interactive
-    Q&A with the speaker.
-  `,
-  image: img03WebTalk,
-  report: "https://www.griet.ac.in/images/FSWReport%202020-21.pdf",
-},
-
-
-  // =========================================================
   // 2020
-  // =========================================================
-
   {
     slug: "quiz-ema-talkies",
     year: 2020,
@@ -488,19 +245,9 @@ const events = [
     category: "QUIZ",
     description:
       "An online quiz event built around coding, decoding, and cinema-themed challenges.",
-    details: `
-    QUIZ EMA-TALKIES was an online quiz event that combined coding,
-    decoding, and cinema-themed challenges.
-
-    The event provided participants with an engaging quiz experience
-    that brought together technical thinking and entertainment-based
-    challenges.
-  `,
     image: img04QuizEma,
-    report:
-      "https://www.griet.ac.in/images/FSWReport%202020-21.pdf",
+    report: "https://www.griet.ac.in/images/FSWReport%202020-21.pdf",
   },
-
   {
     slug: "e-quiz-foss-awareness",
     year: 2020,
@@ -509,19 +256,9 @@ const events = [
     category: "QUIZ",
     description:
       "An online quiz designed to test participants' awareness and understanding of free and open-source software.",
-    details: `
-    E-Quiz: FOSS Awareness was an online quiz focused on free and
-    open-source software.
-
-    The event was designed to engage participants with questions
-    related to FOSS and encourage awareness of free and open-source
-    technologies.
-  `,
     image: img05EQuizFoss,
-    report:
-      "https://www.griet.ac.in/images/FSWReport%202020-21.pdf",
+    report: "https://www.griet.ac.in/images/FSWReport%202020-21.pdf",
   },
-
   {
     slug: "picturize-the-fact",
     year: 2020,
@@ -530,24 +267,11 @@ const events = [
     category: "CREATIVE",
     description:
       "A creative contest encouraging participants to communicate ideas through digital artwork using FOSS tools.",
-    details: `
-    Picturize the Fact was a creative event that encouraged
-    participants to communicate ideas through digital artwork.
-
-    The event provided participants with an opportunity to explore
-    digital creativity while using free and open-source software
-    tools.
-  `,
     image: img06Picturize,
-    report:
-      "https://www.griet.ac.in/images/FSWReport%202020-21.pdf",
+    report: "https://www.griet.ac.in/images/FSWReport%202020-21.pdf",
   },
 
-
-  // =========================================================
   // 2019
-  // =========================================================
-
   {
     slug: "scientific-computing-python",
     year: 2019,
@@ -556,20 +280,9 @@ const events = [
     category: "PYTHON",
     description:
       "An introductory session exploring scientific computing using Python and introducing participants to computational approaches.",
-    details: `
-    Introduction to Scientific Computing Using Python was an
-    introductory technical session focused on scientific computing
-    and Python.
-
-    The event introduced participants to scientific computing concepts
-    and provided an opportunity to explore Python in the context of
-    computational applications.
-  `,
-   image: img07SciComputing,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    image: img07SciComputing,
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
-
   {
     slug: "machine-learning-chatbot",
     year: 2019,
@@ -578,19 +291,9 @@ const events = [
     category: "MACHINE LEARNING",
     description:
       "A technical session introducing machine learning concepts and their application in chatbot design.",
-    details: `
-    Workshop on Machine Learning in Chatbot Design introduced
-    participants to the application of machine learning concepts
-    in chatbot design.
-
-    The event provided an opportunity to explore how machine learning
-    can be applied in the development and design of chatbots.
-  `,
-   image: img08Chatbot,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    image: img08Chatbot,
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
-
   {
     slug: "hands-on-web-scraping",
     year: 2019,
@@ -599,19 +302,9 @@ const events = [
     category: "WORKSHOP",
     description:
       "A practical session introducing students to web scraping concepts and techniques.",
-    details: `
-    Hands-On Web Scraping was a practical workshop introducing
-    participants to web scraping.
-
-    The session provided participants with an opportunity to learn
-    about web scraping concepts and explore the techniques involved
-    in extracting information from the web.
-  `,
     image: img09WebScraping,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
-
   {
     slug: "orientation-free-software",
     year: 2019,
@@ -620,21 +313,9 @@ const events = [
     category: "FOSS",
     description:
       "An orientation introducing students to free and open-source software, its possibilities, and the community surrounding it.",
-    details: `
-    Orientation on Free Software introduced students to free and
-    open-source software and its underlying principles.
-
-    The event also focused on the possibilities offered by free
-    software and the community surrounding the open-source ecosystem.
-
-    The orientation helped introduce students to the ideas and
-    opportunities associated with free software.
-  `,
     image: img10Orientation,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
-
   {
     slug: "quiz",
     year: 2019,
@@ -643,22 +324,11 @@ const events = [
     category: "QUIZ",
     description:
       "An event featuring quiz-based activities designed to engage students through technical and general-interest challenges.",
-    details: `
-    QUIZ Ema-Talkies was an online quiz event conducted by FSW.
-
-    The event combined coding, decoding, and cinema-themed challenges
-    to create an interactive quiz experience for participants.
-  `,
     image: img11Quiz,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
 
-
-  // =========================================================
   // 2018
-  // =========================================================
-
   {
     slug: "orientation-free-software-2018",
     year: 2018,
@@ -667,17 +337,9 @@ const events = [
     category: "FOSS",
     description:
       "A guest session introducing students to free software, its philosophy, possibilities, and role within the open-source community.",
-    details: `
-        A guest talk focused on orientation to Free Software.
-
-        The session introduced participants to Free Software
-        and its concepts.
-      `,
     image: img12GuestOrient,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
-
   {
     slug: "ibm-big-data-analytics",
     year: 2018,
@@ -686,18 +348,9 @@ const events = [
     category: "TECHNICAL SESSION",
     description:
       "An expert session introducing students to the essentials of Big Data Analytics using IBM InfoSphere BigInsights.",
-    details: `
-      An IBM expert session focused on learning the essentials
-      of Big Data Analytics using InfoSphere BigInsights.
-
-      The session introduced participants to Big Data Analytics
-      and the InfoSphere BigInsights platform.
-    `,
     image: img13IBM,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
-
   {
     slug: "scientific-computing-python-2018",
     year: 2018,
@@ -706,23 +359,11 @@ const events = [
     category: "PYTHON",
     description:
       "A workshop introducing participants to scientific computing concepts and Python-based computational techniques.",
-    details: `
-      An introductory workshop focused on Scientific Computing
-      with Python.
-
-      The workshop introduced participants to scientific computing
-      using Python.
-    `,
     image: img14SciComputing2018,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
 
-
-  // =========================================================
   // 2017
-  // =========================================================
-
   {
     slug: "guest-talk-free-software",
     year: 2017,
@@ -731,17 +372,9 @@ const events = [
     category: "FOSS",
     description:
       "A guest talk introducing students to free software and the ideas and possibilities surrounding open-source technology.",
-    details: `
-      A guest talk focused on Free Software.
-
-      The session introduced participants to Free Software
-      and its concepts.
-    `,
     image: img15GuestFreeSW,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
-
   {
     slug: "guest-talk-machine-learning",
     year: 2017,
@@ -750,17 +383,9 @@ const events = [
     category: "MACHINE LEARNING",
     description:
       "A guest session introducing students to the fundamentals and applications of machine learning.",
-    details: `
-      A guest talk focused on Introduction to Machine Learning.
-
-      The session introduced participants to the fundamentals
-      of Machine Learning.
-    `,
     image: img16GuestML,
-    report:
-      "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
+    report: "https://www.griet.ac.in/images2/FREE%20SOFWARE%20WING.pdf",
   },
-
 ];
 
 export default events;

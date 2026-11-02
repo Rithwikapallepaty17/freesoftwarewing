@@ -4,21 +4,22 @@ import './Projects.css'
 import Navbar from './Navbar'
 import grietLogo from './assets/griet-logo.png'
 import projectsFswLogo from "./assets/fswlogo-projects.png";
-/* =========================================================
-   FEATURED PROJECTS
-   ========================================================= */
 
-  const metavid = 'https://files.catbox.moe/43sypw.jpg'
-//const recruitment = 'https://files.catbox.moe/bpsb3p.jpg'
-//const rabbit = 'https://files.catbox.moe/ylzt32.jpg'
-//const vivitsuProj = 'https://files.catbox.moe/u2enxt.jpg'
-//const fswWebsite = 'https://files.catbox.moe/coibwg.jpg'
-//const opensource = 'https://files.catbox.moe/0mtsd2.jpg'
-const tablebot = 'https://files.catbox.moe/em4qfs.jpg'
-const gitScavenger = 'https://files.catbox.moe/hghmta.jpg'
-const grietStudySphere = 'https://files.catbox.moe/yt976w.jpg'
-const satops = 'https://files.catbox.moe/kmpx52.jpg'
-const ciris = 'https://files.catbox.moe/1v38mi.jpg'
+// =========================================================
+// LOCAL PROJECT IMAGES (served directly from public/projects/)
+// =========================================================
+
+const metavid = "/projects/metavid.jpg";
+// const recruitment = "/projects/recruitment.png";
+// const rabbit = "/projects/rabbit.png";
+// const vivitsuProj = "/projects/vivitsu-proj.png";
+// const fswWebsite = "/projects/fsw-website.png";
+// const opensource = "/projects/opensource.png";
+const tablebot = "/projects/tablebot.png";
+const gitScavenger = "/projects/git-scavenger-hunt.png";
+const grietStudySphere = "/projects/griet-study-sphere.png";
+const satops = "/projects/satops.png";
+const ciris = "/projects/ciris.png";
 
 const featuredProjects = [
   /*{
