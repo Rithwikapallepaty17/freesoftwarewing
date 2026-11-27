@@ -72,9 +72,14 @@ function Navbar() {
             <small>04</small>
           </Link>
 
+          <Link to="/reports" onClick={() => setMenuOpen(false)}>
+            <span>Reports</span>
+            <small>05</small>
+          </Link>
+
           <Link to="/community" onClick={() => setMenuOpen(false)}>
             <span>Community</span>
-            <small>05</small>
+            <small>06</small>
           </Link>
         </nav>
       </div>

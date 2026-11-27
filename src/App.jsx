@@ -10,6 +10,7 @@ import Events from "./Events";
 import EventReport from "./pages/EventReport";
 import Footer from "./Footer";
 import Logo from "./Logo";
+import Reports from "./pages/Reports";
 
 function App() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function App() {
         <Route path="/community" element={<Community />} />
         <Route path="/events" element={<Events />} />
         <Route path="/events/:slug" element={<EventReport />} />
+        <Route path="/reports" element={<Reports />} />
       </Routes>
 
       <Footer />

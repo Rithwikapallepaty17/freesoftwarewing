@@ -1,0 +1,220 @@
+.reports-page {
+  min-height: 100vh;
+  background-color: #f7f7f5;
+  color: #0f0f11;
+  padding: 8rem 1.5rem 6rem;
+}
+
+.reports-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* Updated Editorial Header (no bottom border to prevent double lines) */
+.reports-header {
+  padding-bottom: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.reports-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin: 0 0 0.85rem;
+}
+
+.reports-title {
+  font-size: clamp(2.75rem, 5.5vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+  color: #0f0f11;
+  margin: 0;
+}
+
+.reports-title-dot {
+  color: #2563eb;
+}
+
+.reports-subtitle {
+  max-width: 650px;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: rgba(15, 15, 17, 0.66);
+  margin: 1.1rem 0 0;
+}
+
+/* Single Clean Divider + Bigger Report Sections */
+.reports-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(15, 15, 17, 0.16);
+}
+
+.report-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.45rem 1.5rem; /* Bigger row height & breathing room */
+  border-bottom: 1px solid rgba(15, 15, 17, 0.16);
+  background-color: transparent;
+  transition: background-color 0.22s ease, padding-left 0.22s ease;
+}
+
+.report-row:hover {
+  background-color: #ffffff;
+  padding-left: 2rem;
+}
+
+.report-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.report-index {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(15, 15, 17, 0.4);
+  min-width: 2.25rem;
+  transition: color 0.2s ease;
+}
+
+.report-row:hover .report-index {
+  color: #2563eb;
+}
+
+.report-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.report-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.report-year-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+
+.report-format-pill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.14rem 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(15, 15, 17, 0.06);
+  color: rgba(15, 15, 17, 0.72);
+}
+
+.report-name {
+  font-size: 1.48rem; /* Larger report heading */
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: #0f0f11;
+  margin: 0;
+}
+
+/* Action Buttons — kept at exact original size */
+.report-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.btn-view-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.15rem;
+  border-radius: 6px;
+  background-color: #0f0f11;
+  color: #f7f7f5;
+  font-size: 0.86rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border: 1px solid #0f0f11;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-view-pdf:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-download-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.05rem;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #0f0f11;
+  font-size: 0.86rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid rgba(15, 15, 17, 0.22);
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-download-pdf:hover {
+  border-color: #0f0f11;
+  background-color: rgba(15, 15, 17, 0.04);
+  transform: translateY(-1px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 680px) {
+  .reports-page {
+    padding: 6.5rem 1.1rem 4rem;
+  }
+
+  .report-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.75rem 0.75rem;
+  }
+
+  .report-row:hover {
+    padding-left: 1rem;
+  }
+
+  .report-meta {
+    gap: 1rem;
+  }
+
+  .report-name {
+    font-size: 1.25rem;
+  }
+
+  .report-actions {
+    width: 100%;
+    padding-left: 3.25rem;
+  }
+
+  .btn-view-pdf,
+  .btn-download-pdf {
+    flex: 1;
+    justify-content: center;
+  }
+}
